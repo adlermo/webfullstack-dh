@@ -1,18 +1,44 @@
 const pets = require('./pets.json')
 
 const darBanho = pet => {
-    pet.servicos.push("banho");
+    pet.servicos.push({ nome: "banho", data: new Date() })
     console.log(`Dando banho em ${pet.nome}.`);
     return pet;
 }
 
-const vacinar = pet => {
-    pet.vacinado ? console.log(`Pet ${pet.nome} já é vacinado!`) : 
-        console.log(`Vacinando ${pet.nome}.`); 
-        pet.vacinado = true;
-    return pet;    
+const tosar = pet => {
+    pet.servicos.push({ nome: "tosa", data: new Date() })
+    console.log(`Tosando ${pet.nome}.`);
+    return pet;
 }
 
-console.log(darBanho(pets[0]))
+const darVacina = pet => {
+    if (!pet.vacinado) {
+        console.log(`Vacinando ${pet.nome}.`);
+        pet.servicos.push({ nome: 'vacina', data: new Date() })
+    } else {
+        console.log(`Erro: Pet ${pet.nome} já é vacinado!`)
+    }
+    return pet;
+}
 
-console.log(vacinar(pets[1]))
+const mostrarServicos = pet => {
+    let saida = ""
+    for (let servico of pet.servicos) {
+        if (servico.data != undefined) {
+            saida += `${servico.nome}: ${servico.data.toLocaleDateString()} \n`
+        } else {
+            saida += `${servico}: data indefinida \n`
+        }
+    }
+    return saida
+}
+
+
+const realizaServico = (pet, servico) => servico(pet)
+
+console.log(realizaServico(pets[0], tosar))
+console.log(realizaServico(pets[0], darBanho))
+console.log(realizaServico(pets[0], darVacina))
+
+console.log("\n\n\n" + mostrarServicos(pets[0]))
