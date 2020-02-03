@@ -35,9 +35,7 @@ const mostrarServicos = pet => {
 }
 
 const realizaServico = (pet, ...servico) => {
-    for(let s of servico){
-        pet = s(pet)
-    }
+    for (let s of servico) { pet = s(pet) }
     return pet
 }
 
