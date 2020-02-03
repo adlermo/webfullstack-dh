@@ -34,11 +34,13 @@ const mostrarServicos = pet => {
     return saida
 }
 
+const realizaServico = (pet, ...servico) => {
+    for(let s of servico){
+        pet = s(pet)
+    }
+    return pet
+}
 
-const realizaServico = (pet, servico) => servico(pet)
+console.log(realizaServico(pets[1], tosar, darBanho, darVacina))
 
-console.log(realizaServico(pets[0], tosar))
-console.log(realizaServico(pets[0], darBanho))
-console.log(realizaServico(pets[0], darVacina))
-
-console.log("\n\n\n" + mostrarServicos(pets[0]))
+console.log("\n\n\n" + mostrarServicos(pets[1]))
