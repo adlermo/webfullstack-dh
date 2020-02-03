@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "Mimi",
+        "idade": 3,
+        "raca": "SRD",
+        "vacinado": false,
+        "servicos": [
+            "banho"
+        ]
+    },
+    {
+        "nome": "Thor",
+        "idade": 10,
+        "raca": "Rusky",
+        "vacinado": true,
+        "servicos": [
+            "banho",
+            "tosa"
+        ]
+    },
+    {
+        "nome": "Ataúlfo",
+        "idade": 5,
+        "raca": "SRD",
+        "vacinado": false,
+        "servicos": []
+    },
+    {
+        "nome": "Vintém",
+        "idade": 13,
+        "raca": "SRD",
+        "vacinado": true,
+        "servicos": [
+            "castracao"
+        ]
+    }
+]
