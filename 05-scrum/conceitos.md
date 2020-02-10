@@ -11,12 +11,19 @@
 ### Termos mudando
 
 ##### Old    ==>  New
+
 Lucro        ==>  Proposito
+
 Comando      ==>  Liderança distribuída
+
 Chefe        ==>  Facilitador
+
 Regras       ==>  Liberdade e Confiança
+
 Planejamento ==>  Experimentação
+
 Erro         ==>  Aprendizado Contínuo
+
 Sigilo       ==>  Transparência Total
 
 ### Tipos de projetos
@@ -31,7 +38,7 @@ Sigilo       ==>  Transparência Total
 
 ### Surge assim o #SCRUM#
 * "Grito de Guerra" com 4 valores e 12 princípios declarados
-<img src="/src/principios-ageis.jpg">
+<img src="./src/principios-ageis.jpg">
 
 ###### Pilares:
     Transparência
