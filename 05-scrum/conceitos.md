@@ -76,3 +76,10 @@ Sigilo       ==>  Transparência Total
         * Criatividade
         * Transparência, inspeção e adaptação
 
+    ##### Backlog do Produto
+        * Visão do produto
+        * Indentificação de Requisitos
+        * Lista de Itens
+        * Ordenado por Prioridades
+
+Tudo no Scrum tem um Timebox
