@@ -44,3 +44,6 @@ Sigilo       ==>  Transparência Total
     Coragem
     Sinceridade
     Respeito
+
+#### Fluxo do SCRUM ou Ciclo de Vida
+<img src="./src/scrum-lifecycle.jpg">
